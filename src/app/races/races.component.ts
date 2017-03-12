@@ -27,11 +27,7 @@ export class RacesComponent {
       }
     }
     return sum;
-  }
-
-  castDate(date) {
-    return new Date(date);
-  }
+  } //Since totalCost() uses other methods in races, it'll be easier to make a chlid component to call a method on the parent component. 
 
   cashLeft() {
     return this.cash - this.totalCost();
